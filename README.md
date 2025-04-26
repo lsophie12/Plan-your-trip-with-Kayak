@@ -13,7 +13,7 @@ OpenTable
 
 Avec plus de 300 millions de dollars de revenus par an, Kayak opère dans presque tous les pays et toutes les langues pour aider ses utilisateurs à réserver des voyages à travers le monde.
 
-Projet 🚧
+Projet 🚧  
 L'équipe marketing a besoin d'aide pour un nouveau projet. Après une étude utilisateur, l'équipe a découvert que 70 % de ses utilisateurs préparant un voyage aimeraient avoir plus d'informations sur leur destination .
 
 De plus, les recherches auprès des utilisateurs montrent que les gens ont tendance à se méfier des informations qu'ils lisent s'ils ne connaissent pas la marque qui a produit le contenu.
