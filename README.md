@@ -24,7 +24,7 @@ Météo
 Hôtels dans la région
 L'application devrait alors être en mesure de recommander les meilleures destinations et hôtels en fonction des variables ci-dessus à tout moment.
 
-Objectifs 🎯
+Objectifs 🎯  
 Le projet venant de démarrer, votre équipe ne dispose d'aucune donnée permettant de créer cette application. Votre mission consistera donc à :
 
 Extraire les données des destinations
