@@ -1,39 +1,40 @@
 # Plan-your-trip-with-Kayak
 
-Company's description 📇
-Kayak is a travel search engine that helps user plan their next trip at the best price.
+Kayak est un moteur de recherche de voyages qui aide les utilisateurs à planifier leur prochain voyage au meilleur prix.
 
-The company was founded in 2004 by Steve Hafner & Paul M. English. After a few rounds of fundraising, Kayak was acquired by Booking Holdings which now holds:
+L'entreprise a été fondée en 2004 par Steve Hafner et Paul M. English. Après plusieurs levées de fonds, Kayak a été rachetée par Booking Holdings , qui détient désormais :
 
 Booking.com
 Kayak
 Priceline
 Agoda
-RentalCars
+Location de voitures
 OpenTable
-With over $300 million revenue a year, Kayak operates in almost all countries and all languages to help their users book travels accros the globe.
 
-Project 🚧
-The marketing team needs help on a new project. After doing some user research, the team discovered that 70% of their users who are planning a trip would like to have more information about the destination they are going to.
+Avec plus de 300 millions de dollars de revenus par an, Kayak opère dans presque tous les pays et toutes les langues pour aider ses utilisateurs à réserver des voyages à travers le monde.
 
-In addition, user research shows that people tend to be defiant about the information they are reading if they don't know the brand which produced the content.
+Projet 🚧
+L'équipe marketing a besoin d'aide pour un nouveau projet. Après une étude utilisateur, l'équipe a découvert que 70 % de ses utilisateurs préparant un voyage aimeraient avoir plus d'informations sur leur destination .
 
-Therefore, Kayak Marketing Team would like to create an application that will recommend where people should plan their next holidays. The application should be based on real data about:
+De plus, les recherches auprès des utilisateurs montrent que les gens ont tendance à se méfier des informations qu'ils lisent s'ils ne connaissent pas la marque qui a produit le contenu.
 
-Weather
-Hotels in the area
-The application should then be able to recommend the best destinations and hotels based on the above variables at any given time.
+L'équipe marketing de Kayak souhaite donc créer une application qui recommandera des destinations de vacances. Cette application s'appuiera sur des données réelles concernant :
 
-Goals 🎯
-As the project has just started, your team doesn't have any data that can be used to create this application. Therefore, your job will be to:
+Météo
+Hôtels dans la région
+L'application devrait alors être en mesure de recommander les meilleures destinations et hôtels en fonction des variables ci-dessus à tout moment.
 
-Scrape data from destinations
-Get weather data from each destination
-Get hotels' info about each destination
-Store all the information above in a data lake
-Extract, transform and load cleaned data from your datalake to a data warehouse
-Scope of this project 🖼️
-Marketing team wants to focus first on the best cities to travel to in France. According One Week In.com here are the top-35 cities to visit in France:
+Objectifs 🎯
+Le projet venant de démarrer, votre équipe ne dispose d'aucune donnée permettant de créer cette application. Votre mission consistera donc à :
+
+Extraire les données des destinations
+Obtenez des données météorologiques pour chaque destination
+Obtenez des informations sur les hôtels pour chaque destination
+Stockez toutes les informations ci-dessus dans un lac de données
+Extraire, transformer et charger les données nettoyées de votre lac de données vers un entrepôt de données
+
+Portée de ce projet 🖼️
+L'équipe marketing souhaite d'abord se concentrer sur les meilleures villes de France. Selon One Week In.com, voici le top 35 des villes à visiter en France :
 
 ["Mont Saint Michel",
 "St Malo",
@@ -70,44 +71,45 @@ Marketing team wants to focus first on the best cities to travel to in France. A
 "Biarritz",
 "Bayonne",
 "La Rochelle"]
-Copy
-Your team should focus only on the above cities for your project.
 
-Helpers 🦮
-To help you achieve this project, here are a few tips that should help you
+Votre équipe doit se concentrer uniquement sur les villes ci-dessus pour votre projet .
 
-Get weather data with an API
-Use https://nominatim.org/ to get the gps coordinates of all the cities (no subscription required) Documentation : https://nominatim.org/release-docs/develop/api/Search/
+Aides 🦮
+Pour vous aider à réaliser ce projet, voici quelques conseils qui devraient vous aider
 
-Use https://openweathermap.org/appid (you have to subscribe to get a free apikey) and https://openweathermap.org/api/one-call-api to get some information about the weather for the 35 cities and put it in a DataFrame
+Obtenez des données météorologiques avec une API
+Utilisez https://nominatim.org/ pour obtenir les coordonnées GPS de toutes les villes (aucun abonnement requis) Documentation : https://nominatim.org/release-docs/develop/api/Search/
 
-Determine the list of cities where the weather will be the nicest within the next 7 days For example, you can use the values of daily.pop and daily.rain to compute the expected volume of rain within the next 7 days... But it's only an example, actually you can have different opinions on a what a nice weather would be like 😎 Maybe the most important criterion for you is the temperature or humidity, so feel free to change the rules !
+Utilisez https://openweathermap.org/appid (vous devez vous abonner pour obtenir une clé API gratuite) et https://openweathermap.org/api/one-call-api pour obtenir des informations sur la météo des 35 villes et les placer dans un DataFrame
 
-Save all the results in a .csv file, you will use it later 😉 You can save all the informations that seem important to you ! Don't forget to save the name of the cities, and also to create a column containing a unique identifier (id) of each city (this is important for what's next in the project)
+Déterminez la liste des villes où le temps sera le plus agréable dans les 7 prochains jours Par exemple, vous pouvez utiliser les valeurs de daily.pop et daily.rain pour calculer le volume de pluie attendu dans les 7 prochains jours... Mais ce n'est qu'un exemple, en fait vous pouvez avoir des opinions différentes sur ce à quoi ressemblerait un beau temps 😎 Peut-être que le critère le plus important pour vous est la température ou l'humidité, alors n'hésitez pas à changer les règles !
 
-Use plotly to display the best destinations on a map
+Enregistrez tous les résultats dans un .csvfichier ; vous pourrez l'utiliser plus tard ! 😉 Vous pouvez enregistrer toutes les informations qui vous semblent importantes ! N'oubliez pas d'enregistrer le nom des villes et de créer une colonne contenant un identifiant unique (id) pour chaque ville (important pour la suite du projet).
+
+Utilisez plotly pour afficher les meilleures destinations sur une carte
 
 Scrape Booking.com
-Since BookingHoldings doesn't have aggregated databases, it will be much faster to scrape data directly from booking.com
+Étant donné que BookingHoldings ne dispose pas de bases de données agrégées, il sera beaucoup plus rapide d'extraire les données directement de booking.com.
 
-You can scrap as many information asyou want, but we suggest that you get at least:
+Vous pouvez extraire autant d'informations que vous le souhaitez, mais nous vous suggérons d'obtenir au moins :
 
-hotel name,
-Url to its booking.com page,
-Its coordinates: latitude and longitude
-Score given by the website users
-Text description of the hotel
-Create your data lake using S3
-Once you managed to build your dataset, you should store into S3 as a csv file.
+nom de l'hôtel,
+URL vers sa page booking.com,
+Ses coordonnées : latitude et longitude
+Note attribuée par les utilisateurs du site
+Description textuelle de l'hôtel
+
+Créez votre lac de données avec S3
+Une fois que vous avez réussi à créer votre ensemble de données, vous devez le stocker dans S3 sous forme de fichier csv.
 
 ETL
-Once you uploaded your data onto S3, it will be better for the next data analysis team to extract clean data directly from a Data Warehouse. Therefore, create a SQL Database using AWS RDS, extract your data from S3 and store it in your newly created DB.
+Une fois vos données chargées sur S3, il sera plus judicieux pour la prochaine équipe d'analyse d'extraire les données propres directement depuis un entrepôt de données. Créez donc une base de données SQL avec AWS RDS, extrayez vos données de S3 et stockez-les dans votre nouvelle base de données.
 
-Deliverable 📬
-To complete this project, your team should deliver:
+Livrable 📬
+Pour mener à bien ce projet, votre équipe doit fournir :
 
-A .csv file in an S3 bucket containing enriched information about weather and hotels for each french city
+Un .csvfichier dans un bucket S3 contenant des informations enrichies sur la météo et les hôtels pour chaque ville française
 
-A SQL Database where we should be able to get the same cleaned data from S3
+Une base de données SQL où nous devrions pouvoir obtenir les mêmes données nettoyées à partir de S3
 
-Two maps where you should have a Top-5 destinations and a Top-20 hotels in the area. You can use plotly or any other library to do so. 
+Deux cartes contenant un top 5 des destinations et un top 20 des hôtels de la région. Vous pouvez utiliser Plotly ou une autre bibliothèque pour cela. 
